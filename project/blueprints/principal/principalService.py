@@ -1,4 +1,4 @@
-from project.blueprints.principal.principalRepo import add_user, get_user
+from blueprints.principal.principalRepo import add_user, get_user
 from flask_login import UserMixin, login_user, logout_user
 
 class User(UserMixin):

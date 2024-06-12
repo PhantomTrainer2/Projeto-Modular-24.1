@@ -1,6 +1,6 @@
 import os
 from typing import List
-from project.db.database import read_db, write_db
+from db.database import read_db, write_db
 
 USERS_DB_URI = os.path.join(os.path.dirname(os.path.abspath(__file__)),"database","users.json")
 

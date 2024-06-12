@@ -1,10 +1,9 @@
-from project.blueprints.principal import principal
+from blueprints.principal import principal
 from flask import Flask, redirect, url_for, request, jsonify, render_template
-from curso import curso_bp
 from flask_login import LoginManager
-from project.blueprints.principal.principalRepo import get_user
-from project.blueprints.principal.principalService import User
-import curso
+from blueprints.principal.principalRepo import get_user
+from blueprints.principal.principalService import User
+from blueprints.curso import curso
 
 app = Flask(__name__, static_folder="static", static_url_path="/static")
 app.register_blueprint(principal)

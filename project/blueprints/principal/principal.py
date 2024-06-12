@@ -1,5 +1,5 @@
 from flask import Blueprint,render_template,redirect, request, flash, url_for
-from project.blueprints.principal.principalService import register_user, user_login, logout_user
+from blueprints.principal.principalService import register_user, user_login, logout_user
 from flask_login import current_user
 
 
