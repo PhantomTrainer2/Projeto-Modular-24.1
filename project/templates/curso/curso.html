@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gerenciamento de Cursos</title>
+</head>
+<body>
+    <h1>Gerenciamento de Cursos</h1>
+    <h2>Excluir Curso</h2>
+    <form action="/exclui_curso" method="post">
+        <label for="codigoCurso">Código do Curso:</label>
+        <input type="text" id="codigoCurso" name="codigoCurso" required>
+        <button type="submit">Excluir</button>
+    </form>
+
+    <h2>Consultar Curso</h2>
+    <form action="/consulta_curso" method="get">
+        <label for="codigoCurso">Código do Curso:</label>
+        <input type="text" id="codigoCurso" name="codigoCurso" required>
+        <button type="submit">Consultar</button>
+    </form>
+
+    <h2>Atualizar Curso</h2>
+    <form action="/atualiza_curso" method="post">
+        <label for="codigoCurso">Código do Curso:</label>
+        <input type="text" id="codigoCurso" name="codigoCurso" required>
+        <br>
+        <label for="dadosCurso">Dados do Curso:</label>
+        <textarea id="dadosCurso" name="dadosCurso" required></textarea>
+        <br>
+        <button type="submit">Atualizar</button>
+    </form>
+</body>
+</html>
